@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>You Said Yes 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🎶 Background Music -->
+  <audio id="bg-music" autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="card">
+    <h1>💘 Bianca 💘</h1>
+
+    <p>
+      You just made me the happiest person alive 🥰<br /><br />
+      I can’t wait to laugh with you, spoil you,<br />
+      and make unforgettable memories together 🌹
+    </p>
+
+    <p style="margin-top: 25px; font-size: 1.2rem;">
+      Happy Valentine’s Day ❤️
+    </p>
+
+    <p style="margin-top: 10px;">
+      — Yours 💌
+    </p>
+
+    <p style="font-size: 0.9rem; opacity: 0.6; margin-top: 20px;">
+      🎶 Turn your sound on
+    </p>
+  </div>
+
+  <!-- 🎵 Force music play after user interaction -->
+  <script>
+    const music = document.getElementById("bg-music");
+    music.volume = 0.4;
+    music.play().catch(() => {
+      console.log("Autoplay blocked, but user interaction already occurred.");
